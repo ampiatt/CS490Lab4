@@ -56,7 +56,7 @@ model.add(Dense(100, activation='softmax', kernel_constraint=maxnorm(3)))
 
 
 # Compile model
-epochs = 100
+epochs = 60
 lrate = 0.01
 decay = lrate/epochs
 sgd = SGD(lr=lrate, momentum=0.9, decay=decay, nesterov=False)
@@ -73,4 +73,4 @@ print("Accuracy: %.2f%%" % (scores[1]*100))
 model_json = model.to_json()
 with open("model.json", "w") as json_file:
     json_file.write(model_json)
-model.save_weights("model.h5")
+model.save_weights("model.cnnimg")
