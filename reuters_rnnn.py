@@ -25,7 +25,7 @@ rnn.add(Activation('sigmoid'))
 rnn.summary()
 rnn.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
 
-rnn.fit(x_train, y_train, epochs=15, batch_size=50, callbacks=[tb])
+rnn.fit(x_train, y_train, epochs=10, batch_size=50, callbacks=[tb])
 score, accuracy = rnn.evaluate(x_test, y_test, verbose=0)
 print('Test score', score)
 print('Test accuracy', accuracy)

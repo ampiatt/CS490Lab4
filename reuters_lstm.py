@@ -3,7 +3,6 @@ from time import time
 from keras.models import Sequential
 from keras.layers import Activation, Dense, Dropout, Embedding, LSTM, Conv1D, MaxPooling1D
 from keras.preprocessing.sequence import pad_sequences
-from keras.preprocessing.text import Tokenizer
 from keras.callbacks import TensorBoard
 from keras.utils import to_categorical
 
