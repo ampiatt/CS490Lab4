@@ -20,7 +20,7 @@ tb = TensorBoard(log_dir="logs/{}".format(time()))
 rnn = Sequential()
 rnn.add(Embedding(10000, 8, input_length=600))
 rnn.add(SimpleRNN(32))
-rnn.add(Dense(1))
+rnn.add(Dense(46))
 rnn.add(Activation('sigmoid'))
 
 rnn.summary()
